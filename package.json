@@ -1,0 +1,25 @@
+{
+  "name": "mirage-obfuscator",
+  "version": "0.0.1",
+  "description": "JS Obfuscator",
+  "main": "index.js",
+  "repository": "git@github.com:yuleugim/mirage-obfuscator.git",
+  "author": "Miguel Uy <yuleugim@gmail.com>",
+  "license": "CC-BY-NC-ND-4.0",
+  "scripts": {
+    "start": "nodemon --watch config/webpack.config.js --exec 'webpack-dev-server --env development --config config/webpack.config.js'",
+    "build": "webpack --env.target production --config config/webpack.config.js",
+    "lint": "eslint app/ config/ --cache",
+    "lint-fix": "eslint app/ config/ --cache --fix"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-react": "^7.1.0",
+    "html-webpack-plugin": "^2.29.0",
+    "nodemon": "^1.11.0",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1",
+    "webpack-merge": "^4.1.0"
+  }
+}
